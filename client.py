@@ -58,8 +58,8 @@ def getMessage():
 isim = kullaniciAdi()
 
 clientSocket = socket.socket() # default olarak IPv4 ü kullanıyor .:. 
-host = "91.151.93.119"
-port = 4545
+host = "localhost" # sununun ip adresini girmelisiniz
+port = 4545        # isteğe bağlı
 
 print("Waiting for Connection")
 try:

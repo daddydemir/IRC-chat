@@ -67,7 +67,7 @@ def broadCast(kullanici , number):
 while True:
 	istemci , iport = s.accept() # gelen bağlantı isteğini kabul ediyor 
 	clientLis.append(istemci)
-	print(iport[0] , " bağlandı") # localde çalıştığı için port numarası 
+	print(iport[0] , " bağlandı") # iport[0] : ip , iport[1] : port no  
 	start_new_thread(broadCast , (istemci , iport[0] ,)  )
 	
 # 
